@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet" type="text/css" >
+		<script src="script.js" defer type="module"></script>
+		<title>grocery app</title>
+	</head>
+	<body>
+		<section>
+			<form>
+				<input id="addProductName" name="name" type="text" placeholder="unesite naziv">
+				<input id="addProductQuantity" name="quantity" type="text" placeholder="unesite količinu" value="1">
+				<input id="addProductPrice" name="price" type="text" placeholder="unesite cenu">
+				<button id="addProduct" type="button">
+					Dodaj proizvod
+				</button>
+				<button id="deleteProducts" type="button">
+					Obriši proizvode
+				</button>
+			</form>
+		</section>
+		<section>
+			<table>
+				<thead>
+					<tr>
+						<th>
+							id
+						</th>
+						<th>
+							name
+						</th>
+						<th>
+							quantity
+						</th>
+						<th>
+							price
+						</th>
+						<th>
+							edit
+						</th>
+						<th>
+							delete
+						</th>
+					</tr>
+				</thead>
+				<tbody id="productsList"></tbody>
+			</table>
+		</section>
+	</body>
+</html>
